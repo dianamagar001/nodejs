@@ -202,3 +202,25 @@
 // });
 
 
+
+//adavanced routing with expressjs
+//advanced rouying means cresting cleaner .modular and more flexible routes using routes
+//parameters, query params and express router().
+const express = require("express");
+const app=express();
+
+
+//parse json (not needed for this route but good practice)
+app.use(express.json());
+
+
+//route parameter examole
+app.get("/users/:id",(req,res)=>{
+    const userId=req.params.id;
+    res.send(`User ID requested: ${userId}`);
+});
+
+//strat server
+app.listen(5000,()=>{
+    console.log("server running on http://localhost:5000")
+});
