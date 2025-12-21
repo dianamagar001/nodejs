@@ -17,15 +17,33 @@
 // const app = express();
 //  app.get("/", (req, res ,next) => {
 //     const error=new Error("Something went wrong!");
-//     next(error); 
 //     });
 //     app.use((err, req, res, next) => {
 //     console.error("error:", err.message);
-//     res.send("error occured!");
+//     res.send("error occured!");//middleware le petheko(server) homepage ma dikkney
 //     });
 //     app.listen(5000,()=>{
 //         console.log("server started http://localhost:5000");
 //     });
+
+// const express=require ("express");
+// const app = express();
+
+// app.use(async(req,res,next)=>{
+//   console.log("middleware started");
+//   await console.log("waiting task done");
+//   next();
+// });
+// app.get("/",(req,res)=>{
+//   res.send("hello  BCA std");
+// });
+// app.listen(5000,()=>{
+//   console.log("server started ");
+// });
+
+
+
+
 
 
 
