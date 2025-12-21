@@ -12,4 +12,3 @@ const updateFile=fs.unlinkSync(filePath,"/ndiana","utf-8");
 console.log(updateFile);
 
 // fs.writeFile(filePath,Data,callback)
-
