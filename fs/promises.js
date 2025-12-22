@@ -41,14 +41,40 @@
 
 
 //  delete file
-const fs= require ("fs/promises");
-const path = require ("path");
+// const fs= require ("fs/promises");
+// const path = require ("path");
 
+// const fileName="promise.txt";
+// const filePath = path.join(__dirname,fileName);
+
+// fs.unlink(filePath).then(
+//     (data)=> {console.log(udoooo);}
+// ).catch(
+//     (error)=>{console.log(error);}
+// )
+
+
+//readimg files promise
+// const fs= require ("fs/promises");
+// const path = require ("path");
+
+// // const filePath = path.join(__dirname,"fileName");
+// const path1=__dirname;
+// fs.readdir(path1).then(
+//     (data)=> {console.log(data);}
+// ).catch(
+//     (error)=>{console.log(error);}
+// )
+
+
+
+const fs= require("fs");
+const path= require ("path");
 const fileName="promise.txt";
-const filePath = path.join(__dirname,fileName);
+const filePath=path.join(__dirname,fileName);
 
-fs.unlink(filePath).then(
-    (data)=> {console.log(udoooo);}
+fs.readFile(filePath,"utf-8").then(
+    (data)=>{console.log(data);}
 ).catch(
     (error)=>{console.log(error);}
 )
