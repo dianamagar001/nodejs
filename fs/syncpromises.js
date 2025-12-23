@@ -68,13 +68,13 @@
 
 
 
-const fs= require("fs");
-const path= require ("path");
-const fileName="promise.txt";
-const filePath=path.join(__dirname,fileName);
+// const fs= require("fs");
+// const path= require ("path");
+// const fileName="promise.txt";
+// const filePath=path.join(__dirname,fileName);
 
-fs.readFile(filePath,"utf-8").then(
-    (data)=>{console.log(data);}
-).catch(
-    (error)=>{console.log(error);}
-)
+// fs.readFile(filePath,"utf-8").then(
+//     (data)=>{console.log(data);}
+// ).catch(
+//     (error)=>{console.log(error);}
+// )
